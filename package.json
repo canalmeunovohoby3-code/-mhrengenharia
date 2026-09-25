@@ -1,0 +1,18 @@
+{
+  "name": "mhr-manutencao-industrial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da MHR Manutenção Industrial e Engenharia",
+  "scripts": {
+    "dev": "npx --yes serve . --listen tcp://localhost:4180",
+    "start": "npx --yes serve . --listen tcp://localhost:4180",
+    "placeholders": "node tools/generate-placeholders.mjs"
+  },
+  "keywords": [
+    "engenharia industrial",
+    "manutenção industrial",
+    "montagem eletromecânica",
+    "caldeiraria"
+  ],
+  "license": "UNLICENSED"
+}
