@@ -581,7 +581,10 @@
 
 @media (max-width: 767px) {
   .hero__media img {
-    object-position: center 30%;
+    /* No desktop o texto fica à esquerda e as fotos foram compostas com o
+       assunto à direita. No mobile o texto vai para baixo, então deslocamos o
+       enquadramento para a direita para centralizar o assunto da foto. */
+    object-position: 65% 30%;
   }
 }
 
