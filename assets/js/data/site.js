@@ -39,8 +39,8 @@
     },
 
     /* ----------------------------------------------------------------------
-       Canais de contato — preencher quando definidos.
-       Exemplos:
+       Canais de contato oficiais. Use `null` no que ainda não existir.
+       Formato:
          phone:    { label: '(00) 0000-0000', href: 'tel:+550000000000' }
          whatsapp: { label: 'WhatsApp', href: 'https://wa.me/550000000000' }
          email:    { label: 'contato@empresa.com.br', href: 'mailto:...' }
@@ -48,11 +48,11 @@
          linkedin: { label: '/empresa', href: 'https://linkedin.com/company/...' }
        ---------------------------------------------------------------------- */
     contact: {
-      phone: null,
-      whatsapp: null,
+      phone: { label: '(35) 3677-1560', href: 'tel:+553536771560' },
+      whatsapp: { label: '(35) 3677-1560', href: 'https://wa.me/553536771560' },
       email: null,
-      instagram: null,
-      linkedin: null,
+      instagram: { label: '@mhrengenharias', href: 'https://www.instagram.com/mhrengenharias' },
+      linkedin: { label: 'mhrengenharia', href: 'https://www.linkedin.com/company/mhrengenharia' },
     },
 
     /* Endereço usado no mapa incorporado */
