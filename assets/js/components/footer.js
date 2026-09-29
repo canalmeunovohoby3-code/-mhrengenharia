@@ -141,9 +141,8 @@
       MHR.components.logo.brand({ light: true, href: 'index.html' }) +
       '<p class="footer__about">' +
       dom.esc(
-        'Engenharia industrial, montagem eletromecânica, manutenção, caldeiraria e fabricação. Atendimento ao ' +
-          site.area.region +
-          '.'
+        'Engenharia industrial, montagem eletromecânica, manutenção, caldeiraria e fabricação. ' +
+          site.area.note
       ) +
       '</p>' +
       socialRow() +
