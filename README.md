@@ -23,6 +23,16 @@ engenharia.html             Engenharia e planejamento
 seguranca-qualidade.html    Segurança e qualidade
 contato.html                Contato + formulário + mapa
 404.html                    Página não encontrada
+
+segmentos/montagem-manutencao-industrial-mineracao/index.html     Pilar — Mineração
+segmentos/montagem-manutencao-industrial-agroindustria/index.html Pilar — Agroindústria
+servicos/paradas-de-manutencao-industrial/index.html              Pilar — Paradas de Manutenção
+atuacao-nacional/index.html                                       Pilar — Atuação Nacional
+
+> As páginas em subpasta usam `<base href="../../">` (ou `../` no caso de
+> `atuacao-nacional/`) para que os caminhos relativos de CSS/JS/imagens e os
+> links gerados pelo header/footer continuem resolvendo a partir da raiz do
+> site — funciona tanto em domínio raiz quanto em GitHub Pages com subpasta.
 favicon.svg                 Favicon
 site.webmanifest            Manifest (PWA básico)
 robots.txt / sitemap.xml    SEO
