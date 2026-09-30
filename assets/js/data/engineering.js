@@ -64,8 +64,8 @@
     ],
 
     responsibility: [
-      'Responsável técnico registrado no CREA',
-      'Execução conforme as normas de segurança aplicáveis',
+      'Responsabilidade técnica com CREA/ART quando aplicável',
+      'Requisitos de segurança/HSE aplicáveis ao escopo contratado',
       'Registros e documentação de obra organizados',
       'Interface técnica direta com a equipe do cliente',
     ],

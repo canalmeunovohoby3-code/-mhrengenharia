@@ -44,7 +44,7 @@
       alt: 'Capacete de segurança sobre plantas e desenhos técnicos, com obra ao fundo.',
       eyebrow: 'Projetos de Alta Exigência',
       title: 'Experiência técnica para projetos de alta exigência',
-      text: 'Planejamento, execução, controle e entrega com responsabilidade técnica registrada no CREA.',
+      text: 'Planejamento, execução, controle e entrega com responsabilidade técnica e CREA/ART quando aplicável.',
       cta: { label: 'Falar com a MHR', href: 'contato.html' },
       ctaAlt: { label: 'Engenharia e planejamento', href: 'engenharia.html' },
     },

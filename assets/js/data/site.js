@@ -34,8 +34,8 @@
     },
 
     technical: {
-      crea: 'Responsável técnico registrado no CREA',
-      safety: 'Atuação conforme as normas de segurança aplicáveis.',
+      crea: 'CREA/ART quando aplicável',
+      safety: 'Requisitos de segurança/HSE aplicáveis ao escopo contratado.',
     },
 
     /* ----------------------------------------------------------------------
