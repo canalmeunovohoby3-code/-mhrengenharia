@@ -24,7 +24,7 @@
           '<img src="' +
           dom.esc(segment.image) +
           '" alt="' +
-          dom.esc(segment.title + ' — imagem ilustrativa') +
+          dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
           '" loading="lazy" decoding="async">' +
           '</div>' +
           '<span class="segment__index">Segmento ' +
@@ -68,7 +68,7 @@
           '<img src="' +
           dom.esc(segment.image) +
           '" alt="' +
-          dom.esc(segment.title + ' — imagem ilustrativa') +
+          dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
           '" loading="lazy" decoding="async">' +
           '</div>' +
           '<div class="service-detail__body">' +

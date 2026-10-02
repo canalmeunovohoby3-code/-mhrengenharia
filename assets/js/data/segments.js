@@ -13,7 +13,9 @@
       slug: 'mineracao',
       title: 'Mineração',
       icon: 'factory',
-      image: 'assets/img/segments/segmento-01.svg',
+      image: 'assets/img/segments/segmento-01.jpg',
+      imageAlt:
+        'Moinho de grande porte com plataforma de acesso e equipe em campo, em planta de mineração.',
       short:
         'Montagem e manutenção eletromecânica para operações de mineração, beneficiamento mineral e infraestrutura industrial.',
       cta: { label: 'Conheça nossa atuação em mineração', href: 'segmentos/montagem-manutencao-industrial-mineracao/' },
