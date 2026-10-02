@@ -50,7 +50,7 @@
     contact: {
       phone: { label: '(35) 3677-1560', href: 'tel:+553536771560' },
       whatsapp: { label: '(35) 3677-1560', href: 'https://wa.me/553536771560' },
-      email: null,
+      email: { label: 'comercial@mhrengenharia.com', href: 'mailto:comercial@mhrengenharia.com' },
       instagram: { label: '@mhrengenharias', href: 'https://www.instagram.com/mhrengenharias' },
       linkedin: { label: 'mhrengenharia', href: 'https://www.linkedin.com/company/mhrengenharia' },
     },
