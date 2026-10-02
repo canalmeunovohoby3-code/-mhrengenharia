@@ -96,7 +96,7 @@
       icon: 'tank',
       image: 'assets/img/services/servico-05.jpg',
       imageAlt:
-        'Interior de moinho com placas de revestimento parafusadas e esferas de moagem no piso.',
+        'Tubulações industriais com flanges e válvulas durante montagem em campo, ao lado de painel elétrico.',
       short:
         'Fabricação, recuperação e montagem de componentes, estruturas e conjuntos metálicos para manutenção e montagem industrial, conforme projeto, especificação e escopo contratado.',
       applications: 'mineração, plantas de beneficiamento, infraestrutura industrial e agroindústria.',
