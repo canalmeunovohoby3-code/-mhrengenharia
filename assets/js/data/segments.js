@@ -64,7 +64,9 @@
       slug: 'industria-em-geral',
       title: 'Indústria em Geral',
       icon: 'gear',
-      image: 'assets/img/segments/segmento-04.svg',
+      image: 'assets/img/segments/segmento-04.jpg',
+      imageAlt:
+        'Planta industrial iluminada à noite, com transportadores e estruturas metálicas em operação.',
       short:
         'Atendimento a operações industriais e processos produtivos, conforme escopo, capacidade técnica e requisitos do projeto.',
       bullets: [
