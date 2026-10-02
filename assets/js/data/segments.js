@@ -48,7 +48,9 @@
       slug: 'beneficiamento-processamento-agroindustrial',
       title: 'Beneficiamento e Processamento Agroindustrial',
       icon: 'layers',
-      image: 'assets/img/segments/segmento-03.svg',
+      image: 'assets/img/segments/segmento-03.jpg',
+      imageAlt:
+        'Planta de beneficiamento e processamento de grãos com silos, transportadores e estruturas metálicas.',
       short:
         'Serviços de montagem e manutenção para instalações de processamento e beneficiamento, conforme escopo contratado.',
       bullets: [
