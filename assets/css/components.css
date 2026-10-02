@@ -1167,6 +1167,18 @@
   }
 }
 
+/* Bloco institucional sem imagem (enquanto não há foto do local): o texto
+   ocupa a largura disponível, com medida de leitura confortável. */
+.about__grid--single .about__body {
+  max-width: 72ch;
+}
+
+@media (min-width: 1024px) {
+  .about__grid--single {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .about__body > * + * {
   margin-top: var(--sp-5);
 }
