@@ -62,7 +62,7 @@
       icon: 'wrench',
       image: 'assets/img/services/servico-03.jpg',
       imageAlt:
-        'Manutenção em equipamento rotativo de grande porte, com placas de revestimento e equipamento de manutenção no piso.',
+        'Planta industrial com guindaste, estruturas metálicas e tubulações durante serviços de manutenção e montagem.',
       short: 'Manutenção preventiva e corretiva para equipamentos e instalações industriais.',
       scope:
         'Manutenção preventiva e corretiva para equipamentos e instalações industriais, com foco em disponibilidade, confiabilidade e continuidade operacional.',

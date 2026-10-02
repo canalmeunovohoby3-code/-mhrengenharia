@@ -207,7 +207,7 @@ blocos (a mesma na página inicial e na página Serviços).
 | ------- | ------- | ---- |
 | 01 — Montagem Eletromecânica | `assets/img/services/servico-01.jpg` | montagem de transportador de correia (350 KB) |
 | 02 — Montagem Elétrica e Instrumentação | `assets/img/services/servico-02.jpg` | teste de painel elétrico com multímetro (198 KB) |
-| 03 — Manutenção Industrial | `assets/img/services/servico-03.jpg` | manutenção em equipamento rotativo, com placas de revestimento (392 KB) |
+| 03 — Manutenção Industrial | `assets/img/services/servico-03.jpg` | planta industrial com guindaste, estruturas metálicas e tubulações (196 KB) |
 | 05 — Caldeiraria Pesada e Fabricação | `assets/img/services/servico-05.jpg` | interior de moinho, placas de revestimento e esferas de moagem (297 KB) |
 | 06 — Soldagem Industrial | `assets/img/services/servico-06.jpg` | soldador com máscara executando solda, com faíscas (209 KB) |
 | 04, 07, 08 e 09 | `servico-04.svg`, `servico-07.svg`, `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
@@ -220,7 +220,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | ------ | ------------ |
 | `projects/2.png` | `services/servico-01.jpg` |
 | `projects/3.jpg` | `services/servico-02.jpg` (recortada de 2252 × 4003 para 4:3) |
-| `projects/4.jpeg` | `services/servico-03.jpg` (copiada sem recompressão) |
+| `assets/1.PNG` | `services/servico-03.jpg` (redimensionada de 568 × 426 para 1200 × 900) |
 | `projects/1.png` | `services/servico-05.jpg` (recortada de 1127 × 1396 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
