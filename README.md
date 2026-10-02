@@ -210,7 +210,8 @@ blocos (a mesma na página inicial e na página Serviços).
 | 03 — Manutenção Industrial | `assets/img/services/servico-03.jpg` | planta industrial com guindaste, estruturas metálicas e tubulações (196 KB) |
 | 05 — Caldeiraria Industrial e Fabricação | `assets/img/services/servico-05.jpg` | tubulações industriais com flanges e válvulas durante montagem em campo (137 KB) |
 | 06 — Soldagem Industrial | `assets/img/services/servico-06.jpg` | soldador com máscara executando solda, com faíscas (209 KB) |
-| 04, 07, 08 e 09 | `servico-04.svg`, `servico-07.svg`, `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
+| 07 — Vulcanização de Correias | `assets/img/services/servico-07.jpg` | dois técnicos executando vulcanização em correia transportadora (177 KB) |
+| 04, 08 e 09 | `servico-04.svg`, `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
 
 ### Origem das fotos (arquivos mestres)
 
@@ -222,6 +223,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `projects/3.jpg` | `services/servico-02.jpg` (recortada de 2252 × 4003 para 4:3) |
 | `assets/1.PNG` | `services/servico-03.jpg` (redimensionada de 568 × 426 para 1200 × 900) |
 | `assets/2.PNG` | `services/servico-05.jpg` (recortada de 569 × 758 para 4:3) |
+| `assets/3.PNG` | `services/servico-07.jpg` (recortada de 563 × 373 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo

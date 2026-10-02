@@ -132,7 +132,9 @@
       slug: 'vulcanizacao-de-correias',
       title: 'Vulcanização de Correias',
       icon: 'belt',
-      image: 'assets/img/services/servico-07.svg',
+      image: 'assets/img/services/servico-07.jpg',
+      imageAlt:
+        'Dois técnicos com capacete executando vulcanização em correia transportadora, com prensa de vulcanização ao fundo.',
       short: 'Vulcanização a frio e a quente de correias transportadoras.',
       scope:
         'Vulcanização a frio e a quente de correias transportadoras, apoiando a operação de sistemas de transporte de minério, grãos e materiais a granel.',
