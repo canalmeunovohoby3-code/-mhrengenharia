@@ -31,7 +31,9 @@
       slug: 'agroindustria',
       title: 'Agroindústria',
       icon: 'tank',
-      image: 'assets/img/segments/segmento-02.svg',
+      image: 'assets/img/segments/segmento-02.jpg',
+      imageAlt:
+        'Vista aérea de planta agroindustrial com silos, secadores, transportadores e tanques de armazenagem de grãos.',
       short:
         'Montagem e manutenção industrial para silos, secadores, elevadores, transportadores, armazenagem e processamento de grãos.',
       page: { label: 'Ver página do segmento', href: 'segmentos/montagem-manutencao-industrial-agroindustria/' },

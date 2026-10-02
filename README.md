@@ -225,6 +225,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/2.PNG` | `services/servico-05.jpg` (recortada de 569 × 758 para 4:3) |
 | `assets/3.PNG` | `services/servico-07.jpg` (recortada de 563 × 373 para 4:3) |
 | `assets/4.PNG` | `segments/segmento-01.jpg` — card Mineração (recortada de 564 × 484 para 4:3) |
+| `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (redimensionada de 424 × 319 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo
