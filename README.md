@@ -228,6 +228,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (redimensionada de 424 × 319 para 4:3) |
 | `assets/6.PNG` | `segments/segmento-03.jpg` — card Beneficiamento/Processamento Agroindustrial (recortada de 568 × 378 para 4:3) |
 | `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (recortada de 565 × 353 para 4:3) |
+| `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo
