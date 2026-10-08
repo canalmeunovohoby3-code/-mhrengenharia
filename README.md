@@ -227,13 +227,15 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/2.PNG` | `services/servico-05.jpg` (recortada de 569 × 758 para 4:3) |
 | `assets/3.PNG` | `services/servico-07.jpg` (recortada de 563 × 373 para 4:3) |
 | `assets/4.PNG` | `segments/segmento-01.jpg` — card Mineração (recortada de 564 × 484 para 4:3) |
-| `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (redimensionada de 424 × 319 para 4:3) |
+| `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
 | `assets/6.PNG` | `segments/segmento-03.jpg` — card Beneficiamento/Processamento Agroindustrial (recortada de 568 × 378 para 4:3) |
-| `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (recortada de 565 × 353 para 4:3) |
+| `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
 | `assets/10.PNG` | `services/servico-08.jpg` (recortada de 565 × 314 para 4:3) |
 | `assets/11.PNG` | `services/servico-09.jpg` (recortada de 569 × 378 para 4:3) |
+| `assets/12.PNG` | `media/qualidade-01.jpg` — seção "Segurança como requisito de execução" (recortada de 542 × 360 para 4:3) |
+| `assets/13.PNG` | `media/engenharia-01.jpg` — seção "Controle que acompanha a execução" (recortada de 565 × 380 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo
