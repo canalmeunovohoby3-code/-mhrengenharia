@@ -91,6 +91,7 @@
         'Controle de produtividade durante a janela',
         'Registro de intervenções e liberação de Áreas',
       ],
+      featured: true,
     },
     {
       slug: 'caldeiraria-pesada-fabricacao',
@@ -128,7 +129,6 @@
         'Reparos em campo e em oficina',
         'Preparação, ajuste e acabamento',
       ],
-      featured: true,
     },
     {
       slug: 'vulcanizacao-de-correias',
@@ -146,7 +146,6 @@
         'Apoio a sistemas de transporte de granéis',
         'Intervenções programadas e emergenciais',
       ],
-      featured: true,
     },
     {
       slug: 'andaimes',
