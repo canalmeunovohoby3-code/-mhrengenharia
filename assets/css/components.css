@@ -1411,6 +1411,38 @@
   }
 }
 
+/* Home, telas pequenas (<900px): a prévia de serviços vira um cartão compacto
+   — miniatura à esquerda + número, título, resumo curto e link à direita.
+   Reduz muito o comprimento da Home sem remover serviços nem imagens.
+   Escopo: apenas a prévia da Home (--compact). A página Serviços usa
+   .service-detail sem esse modificador e não é afetada; o desktop (>=900px)
+   mantém o layout atual. */
+@media (max-width: 899px) {
+  .service-detail--compact {
+    grid-template-columns: clamp(96px, 28vw, 128px) minmax(0, 1fr);
+    gap: clamp(0.85rem, 3vw, 1.25rem);
+    align-items: start;
+    padding-block: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .service-detail--compact .service-detail__body {
+    gap: 0.5rem;
+  }
+
+  .service-detail--compact .service-detail__title {
+    font-size: var(--fs-lg);
+  }
+
+  .service-detail--compact .service-detail__text {
+    font-size: var(--fs-sm);
+  }
+
+  .service-detail--compact .service-detail__applications,
+  .service-detail--compact .service-detail__list {
+    display: none;
+  }
+}
+
 /* CTA abaixo da prévia de serviços (página inicial) */
 .service-preview-cta {
   margin-top: clamp(2.5rem, 5vw, 4rem);
