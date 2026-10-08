@@ -169,7 +169,9 @@
       slug: 'planejamento-controle-obras',
       title: 'Planejamento e Controle de Obras',
       icon: 'chart',
-      image: 'assets/img/services/servico-09.svg',
+      image: 'assets/img/services/servico-09.jpg',
+      imageAlt:
+        'Notebook com cronogramas e painéis de controle, capacete, trena e plantas sobre a mesa, em frente a uma planta industrial.',
       short: 'Cronogramas, medições, RDO, databook e as-built.',
       scope:
         'Cronogramas, medições, RDO, databook e as-built — a estrutura de engenharia que acompanha a execução e dá visibilidade ao cliente sobre prazos, custos e escopo realizado.',

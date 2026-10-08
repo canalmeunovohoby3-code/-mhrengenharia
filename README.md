@@ -213,7 +213,7 @@ blocos (a mesma na página inicial e na página Serviços).
 | 07 — Vulcanização de Correias | `assets/img/services/servico-07.jpg` | dois técnicos executando vulcanização em correia transportadora (177 KB) |
 | 04 — Paradas de Manutenção | `assets/img/services/servico-04.jpg` | equipamento rotativo de grande porte com flanges e plataformas durante parada (152 KB) |
 | 08 — Andaimes | `assets/img/services/servico-08.jpg` | equipamento rotativo de grande porte com estruturas de acesso em operação (133 KB) |
-| 09 | `servico-09.svg` | ainda é placeholder (gerado por `npm run placeholders`) |
+| 09 — Planejamento e Controle de Obras | `assets/img/services/servico-09.jpg` | notebook com cronogramas e painéis de controle, capacete e plantas (166 KB) |
 
 ### Origem das fotos (arquivos mestres)
 
@@ -233,6 +233,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
 | `assets/10.PNG` | `services/servico-08.jpg` (recortada de 565 × 314 para 4:3) |
+| `assets/11.PNG` | `services/servico-09.jpg` (recortada de 569 × 378 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo
