@@ -211,7 +211,8 @@ blocos (a mesma na página inicial e na página Serviços).
 | 05 — Caldeiraria Industrial e Fabricação | `assets/img/services/servico-05.jpg` | tubulações industriais com flanges e válvulas durante montagem em campo (137 KB) |
 | 06 — Soldagem Industrial | `assets/img/services/servico-06.jpg` | soldador com máscara executando solda, com faíscas (209 KB) |
 | 07 — Vulcanização de Correias | `assets/img/services/servico-07.jpg` | dois técnicos executando vulcanização em correia transportadora (177 KB) |
-| 04, 08 e 09 | `servico-04.svg`, `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
+| 04 — Paradas de Manutenção | `assets/img/services/servico-04.jpg` | equipamento rotativo de grande porte com flanges e plataformas durante parada (152 KB) |
+| 08 e 09 | `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
 
 ### Origem das fotos (arquivos mestres)
 
@@ -229,6 +230,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/6.PNG` | `segments/segmento-03.jpg` — card Beneficiamento/Processamento Agroindustrial (recortada de 568 × 378 para 4:3) |
 | `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (recortada de 565 × 353 para 4:3) |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
+| `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo

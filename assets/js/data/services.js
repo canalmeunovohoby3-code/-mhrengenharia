@@ -78,7 +78,9 @@
       slug: 'paradas-de-manutencao',
       title: 'Paradas de Manutenção',
       icon: 'clock',
-      image: 'assets/img/services/servico-04.svg',
+      image: 'assets/img/services/servico-04.jpg',
+      imageAlt:
+        'Equipamento rotativo de grande porte com flanges parafusados e plataformas de acesso durante parada de manutenção.',
       page: { label: 'Ver página do serviço', href: 'servicos/paradas-de-manutencao-industrial/' },
       short: 'Planejamento e execução de serviços durante paradas industriais.',
       scope:
