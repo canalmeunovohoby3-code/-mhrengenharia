@@ -45,17 +45,17 @@
       ],
     },
     {
-      slug: 'beneficiamento-processamento-agroindustrial',
-      title: 'Beneficiamento e Processamento Agroindustrial',
+      slug: 'fertilizantes',
+      title: 'Fertilizantes',
       icon: 'layers',
       image: 'assets/img/segments/segmento-03.jpg',
       imageAlt:
-        'Planta de beneficiamento e processamento de grãos com silos, transportadores e estruturas metálicas.',
+        'Planta industrial com silos, transportadores e estruturas metálicas.',
       short:
-        'Serviços de montagem e manutenção para instalações de processamento e beneficiamento, conforme escopo contratado.',
+        'Montagem e manutenção industrial para plantas de mineração e processamento de fertilizantes, conforme escopo contratado.',
       bullets: [
-        'Transportadores e dutos',
-        'Equipamentos de beneficiamento',
+        'Mineração e processamento de fertilizantes',
+        'Transportadores, dutos e sistemas de movimentação',
         'Fabricação e recuperação de componentes',
         'Manutenção preventiva e corretiva',
       ],
