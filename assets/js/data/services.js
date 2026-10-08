@@ -152,7 +152,9 @@
       slug: 'andaimes',
       title: 'Andaimes',
       icon: 'scaffold',
-      image: 'assets/img/services/servico-08.svg',
+      image: 'assets/img/services/servico-08.jpg',
+      imageAlt:
+        'Equipamento rotativo de grande porte com estruturas de acesso, em operação em planta industrial.',
       short: 'Montagem e desmontagem de andaimes para operações e obras industriais.',
       scope:
         'Montagem e desmontagem de andaimes para operações e obras industriais, com dimensionamento de estrutura e organização das frentes de trabalho.',

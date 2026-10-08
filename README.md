@@ -212,7 +212,8 @@ blocos (a mesma na página inicial e na página Serviços).
 | 06 — Soldagem Industrial | `assets/img/services/servico-06.jpg` | soldador com máscara executando solda, com faíscas (209 KB) |
 | 07 — Vulcanização de Correias | `assets/img/services/servico-07.jpg` | dois técnicos executando vulcanização em correia transportadora (177 KB) |
 | 04 — Paradas de Manutenção | `assets/img/services/servico-04.jpg` | equipamento rotativo de grande porte com flanges e plataformas durante parada (152 KB) |
-| 08 e 09 | `servico-08.svg`, `servico-09.svg` | ainda são placeholders (gerados por `npm run placeholders`) |
+| 08 — Andaimes | `assets/img/services/servico-08.jpg` | equipamento rotativo de grande porte com estruturas de acesso em operação (133 KB) |
+| 09 | `servico-09.svg` | ainda é placeholder (gerado por `npm run placeholders`) |
 
 ### Origem das fotos (arquivos mestres)
 
@@ -231,6 +232,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (recortada de 565 × 353 para 4:3) |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
+| `assets/10.PNG` | `services/servico-08.jpg` (recortada de 565 × 314 para 4:3) |
 | `projects/5.jpg` | `services/servico-06.jpg` (recortada de 2304 × 4096 para 4:3) |
 
 Ao trocar um placeholder por uma foto real, preencha também o campo
