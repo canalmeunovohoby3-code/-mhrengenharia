@@ -50,7 +50,7 @@
       icon: 'layers',
       image: 'assets/img/segments/segmento-03.jpg',
       imageAlt:
-        'Planta industrial com silos, transportadores e estruturas metálicas.',
+        'Equipamento rotativo de grande porte com proteção metálica e passarelas, em planta de processamento.',
       short:
         'Montagem e manutenção industrial para plantas de mineração e processamento de fertilizantes, conforme escopo contratado.',
       bullets: [

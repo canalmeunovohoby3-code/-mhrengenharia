@@ -153,7 +153,7 @@
       icon: 'scaffold',
       image: 'assets/img/services/servico-08.jpg',
       imageAlt:
-        'Equipamento rotativo de grande porte com estruturas de acesso, em operação em planta industrial.',
+        'Estrutura de andaimes tubulares vista de cima, montada em ambiente industrial.',
       short: 'Montagem e desmontagem de andaimes para operações e obras industriais.',
       scope:
         'Montagem e desmontagem de andaimes para operações e obras industriais, com dimensionamento de estrutura e organização das frentes de trabalho.',

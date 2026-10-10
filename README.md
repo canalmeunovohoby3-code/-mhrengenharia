@@ -212,7 +212,7 @@ blocos (a mesma na página inicial e na página Serviços).
 | 06 — Soldagem Industrial | `assets/img/services/servico-06.jpg` | soldador com máscara executando solda, com faíscas (209 KB) |
 | 07 — Vulcanização de Correias | `assets/img/services/servico-07.jpg` | dois técnicos executando vulcanização em correia transportadora (177 KB) |
 | 04 — Paradas de Manutenção | `assets/img/services/servico-04.jpg` | equipamento rotativo de grande porte com flanges e plataformas durante parada (152 KB) |
-| 08 — Andaimes | `assets/img/services/servico-08.jpg` | equipamento rotativo de grande porte com estruturas de acesso em operação (133 KB) |
+| 08 — Andaimes | `assets/img/services/servico-08.jpg` | estrutura de andaimes tubulares vista de cima (177 KB) |
 | 09 — Planejamento e Controle de Obras | `assets/img/services/servico-09.jpg` | notebook com cronogramas e painéis de controle, capacete e plantas (166 KB) |
 
 ### Origem das fotos (arquivos mestres)
@@ -228,11 +228,11 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/3.PNG` | `services/servico-07.jpg` (recortada de 563 × 373 para 4:3) |
 | `assets/4.PNG` | `segments/segmento-01.jpg` — card Mineração (recortada de 564 × 484 para 4:3) |
 | `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
-| `assets/6.PNG` | `segments/segmento-03.jpg` — card Beneficiamento/Processamento Agroindustrial (recortada de 568 × 378 para 4:3) |
+| `assets/15.PNG` | `segments/segmento-03.jpg` — card Fertilizantes (recortada de 565 × 427 para 4:3) |
 | `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
-| `assets/10.PNG` | `services/servico-08.jpg` (recortada de 565 × 314 para 4:3) |
+| `assets/14.PNG` | `services/servico-08.jpg` — Andaimes (recortada de 567 × 320 para 4:3) |
 | `assets/11.PNG` | `services/servico-09.jpg` (recortada de 569 × 378 para 4:3) |
 | `assets/12.PNG` | `media/qualidade-01.jpg` — seção "Segurança como requisito de execução" (recortada de 542 × 360 para 4:3) |
 | `assets/13.PNG` | `media/engenharia-01.jpg` — seção "Controle que acompanha a execução" (recortada de 565 × 380 para 4:3) |
