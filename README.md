@@ -229,7 +229,7 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/4.PNG` | `segments/segmento-01.jpg` — card Mineração (recortada de 564 × 484 para 4:3) |
 | `assets/5.PNG` | `segments/segmento-02.jpg` — card Agroindústria (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
 | `assets/15.PNG` | `segments/segmento-03.jpg` — card Fertilizantes (recortada de 565 × 427 para 4:3) |
-| `assets/7.PNG` | `segments/segmento-04.jpg` — card Indústria em Geral (versão de alta qualidade, 1448 × 1086 → 1400 × 1050) |
+| `assets/7.PNG` | (não utilizado no momento) — o card "Cimenteira" está **sem foto**, aguardando nova imagem |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
 | `assets/14.PNG` | `services/servico-08.jpg` — Andaimes (recortada de 567 × 320 para 4:3) |

@@ -21,11 +21,13 @@
         return (
           '<article class="segment reveal">' +
           '<div class="segment__media">' +
-          '<img src="' +
-          dom.esc(segment.image) +
-          '" alt="' +
-          dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
-          '" loading="lazy" decoding="async">' +
+          (segment.image
+            ? '<img src="' +
+              dom.esc(segment.image) +
+              '" alt="' +
+              dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
+              '" loading="lazy" decoding="async">'
+            : '') +
           '</div>' +
           '<span class="segment__index">Segmento ' +
           pad2(index + 1) +
@@ -65,11 +67,13 @@
           dom.esc(segment.slug || segment.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')) +
           '">' +
           '<div class="service-detail__media media-frame media-frame--zoom media-frame--tech aspect-4x3">' +
-          '<img src="' +
-          dom.esc(segment.image) +
-          '" alt="' +
-          dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
-          '" loading="lazy" decoding="async">' +
+          (segment.image
+            ? '<img src="' +
+              dom.esc(segment.image) +
+              '" alt="' +
+              dom.esc(segment.imageAlt || segment.title + ' — imagem ilustrativa') +
+              '" loading="lazy" decoding="async">'
+            : '') +
           '</div>' +
           '<div class="service-detail__body">' +
           '<span class="service-detail__index">Segmento ' +

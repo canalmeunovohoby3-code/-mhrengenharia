@@ -1498,6 +1498,12 @@
   z-index: -1;
 }
 
+/* Segmento sem foto (espaço reservado para uma imagem futura): mantém o card
+   escuro e legível enquanto não há imagem definida. */
+.segment__media:empty {
+  background: var(--ink-900);
+}
+
 .segment__media img {
   width: 100%;
   height: 100%;
