@@ -64,6 +64,9 @@
       slug: 'cimenteira',
       title: 'Cimenteira',
       icon: 'gear',
+      image: 'assets/img/segments/segmento-04.jpg',
+      imageAlt:
+        'Estrutura de andaimes tubulares vista de cima, montada em ambiente industrial.',
       short:
         'Atendimento a operações industriais e processos produtivos, conforme escopo, capacidade técnica e requisitos do projeto.',
       bullets: [
