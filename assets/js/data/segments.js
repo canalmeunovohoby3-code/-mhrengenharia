@@ -66,7 +66,7 @@
       icon: 'gear',
       image: 'assets/img/segments/segmento-04.jpg',
       imageAlt:
-        'Estrutura de andaimes tubulares vista de cima, montada em ambiente industrial.',
+        'Forno rotativo de grande porte com chama e estruturas de acesso, em planta industrial.',
       short:
         'Atendimento a operações industriais e processos produtivos, conforme escopo, capacidade técnica e requisitos do projeto.',
       bullets: [

@@ -232,7 +232,8 @@ As fotos enviadas ficam numeradas na pasta `projects/`. Correspondência atual:
 | `assets/7.PNG` | (não utilizado no momento) |
 | `assets/8.PNG` | `media/seguranca-01.jpg` — seção Segurança (home) e fundo do hero de Segurança e Qualidade (recortada de 577 × 391 para 4:3) |
 | `assets/9.PNG` | `services/servico-04.jpg` (recortada de 566 × 425 para 4:3) |
-| `assets/14.PNG` | `services/servico-08.jpg` (Andaimes) e `segments/segmento-04.jpg` (Cimenteira) — mesma foto, recortada de 567 × 320 para 4:3 |
+| `assets/14.PNG` | `services/servico-08.jpg` — Andaimes (recortada de 567 × 320 para 4:3) |
+| `assets/10.PNG` | `segments/segmento-04.jpg` — card Cimenteira (recortada de 565 × 314 para 4:3) |
 | `assets/11.PNG` | `services/servico-09.jpg` (recortada de 569 × 378 para 4:3) |
 | `assets/12.PNG` | `media/qualidade-01.jpg` — seção "Segurança como requisito de execução" (recortada de 542 × 360 para 4:3) |
 | `assets/13.PNG` | `media/engenharia-01.jpg` — seção "Controle que acompanha a execução" (recortada de 565 × 380 para 4:3) |
