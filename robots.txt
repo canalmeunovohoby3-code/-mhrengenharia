@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-# Substitua SEU-DOMINIO.com.br pelo domínio definitivo após a publicação.
-Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
+# Domínio: https://mhrengenharia.com
+Sitemap: https://mhrengenharia.com/sitemap.xml

@@ -310,9 +310,10 @@ original do arquivo.
 
 ## Domínio definitivo
 
-Antes de publicar, substitua `SEU-DOMINIO.com.br` pelo domínio real em:
+Site publicado em **`https://mhrengenharia.com`** — o domínio já está aplicado em
 `robots.txt`, `sitemap.xml` e nas tags `canonical` / `og:url` / `og:image` de
-todas as páginas HTML.
+todas as páginas HTML. HTTPS, canônico (sem www), página 404, compressão e cache
+são tratados pelo `.htaccess` na raiz do site (hospedagem Apache/Hostinger).
 
 ## JavaScript
 
@@ -334,9 +335,9 @@ Consequências:
 
 ## Observações
 
-- Não há dados fictícios: clientes, números, certificações, telefone, WhatsApp
-  e redes sociais ficam como espaços reservados até a informação real existir.
-- As certificações têm área reservada em `seguranca-qualidade.html`.
+- Não há dados fictícios: clientes, números e obras não são divulgados sem
+  comprovação. Telefone, WhatsApp, e-mail e redes sociais são os canais reais
+  informados pelo cliente.
 - O formulário de contato valida os campos no cliente e exibe uma confirmação;
   para envio real, conecte o `submit` em `assets/js/components/contact.js` a um
   endpoint ou serviço de e-mail.
