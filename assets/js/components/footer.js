@@ -7,7 +7,12 @@
   var dom = MHR.dom;
   var icon = MHR.icons.get;
 
-  var columns = {
+  /* Texto institucional padrão (usado se o painel não enviar um) */
+  var DEFAULT_ABOUT =
+    'A MHR Engenharia atua em montagem e manutenção industrial, com foco em mineração e agroindústria, mobilizando equipes conforme o escopo e os requisitos de cada projeto em todo o território nacional.';
+
+  /* Colunas de links padrão (usadas se o painel não enviar outras) */
+  var DEFAULT_COLUMNS = {
     mhr: [
       { label: 'A Empresa', href: 'a-empresa.html' },
       { label: 'Serviços', href: 'servicos.html' },
@@ -32,12 +37,24 @@
     ],
   };
 
+  /* Editável pelo painel: MHR.site.footer = { about, columns }
+     Sem dados do painel, usa os padrões acima (site idêntico ao atual). */
+  function footerData() {
+    var remote = (MHR.site && MHR.site.footer) || {};
+    return {
+      about: typeof remote.about === 'string' && remote.about ? remote.about : DEFAULT_ABOUT,
+      columns:
+        remote.columns && typeof remote.columns === 'object' ? remote.columns : DEFAULT_COLUMNS,
+    };
+  }
+
   function linkList(items, className) {
+    /* (items || []) protege contra coluna ausente no conteúdo vindo do painel */
     return (
       '<ul class="' +
       (className || 'footer__list') +
       '">' +
-      items
+      (items || [])
         .map(function (item) {
           return (
             '<li><a class="footer__link" href="' +
@@ -135,6 +152,7 @@
     var site = MHR.site;
     var address = site.address;
     var year = new Date().getFullYear();
+    var data = footerData();
 
     mount.innerHTML =
       '<footer class="site-footer" role="contentinfo">' +
@@ -143,27 +161,25 @@
       '<div class="footer__brand">' +
       MHR.components.logo.brand({ light: true, href: 'index.html' }) +
       '<p class="footer__about">' +
-      dom.esc(
-        'A MHR Engenharia atua em montagem e manutenção industrial, com foco em mineração e agroindústria, mobilizando equipes conforme o escopo e os requisitos de cada projeto em todo o território nacional.'
-      ) +
+      dom.esc(data.about) +
       '</p>' +
       socialRow() +
       '</div>' +
       '<div class="footer__col footer__col--mhr">' +
       '<h2 class="footer__title">MHR</h2>' +
-      linkList(columns.mhr) +
+      linkList(data.columns.mhr) +
       '</div>' +
       '<div class="footer__col footer__col--segments">' +
       '<h2 class="footer__title">Segmentos</h2>' +
-      linkList(columns.segments) +
+      linkList(data.columns.segments) +
       '</div>' +
       '<div class="footer__col footer__col--services">' +
       '<h2 class="footer__title">Serviços</h2>' +
-      linkList(columns.services) +
+      linkList(data.columns.services) +
       '</div>' +
       '<div class="footer__col footer__col--institutional">' +
       '<h2 class="footer__title">Institucional</h2>' +
-      linkList(columns.institutional) +
+      linkList(data.columns.institutional) +
       '</div>' +
       '<div class="footer__col footer__col--contact">' +
       '<h2 class="footer__title">Contato</h2>' +

@@ -315,6 +315,21 @@ Site publicado em **`https://mhrengenharia.com`** — o domínio já está aplic
 todas as páginas HTML. HTTPS, canônico (sem www), página 404, compressão e cache
 são tratados pelo `.htaccess` na raiz do site (hospedagem Apache/Hostinger).
 
+## Painel administrativo (Supabase)
+
+O cliente edita o conteúdo em **`/admin/`** (login por e-mail/senha do Supabase).
+A preparação do backend está em **`supabase/`** — leia `supabase/README.md`:
+
+- `supabase/01-schema.sql` — tabela `content` + `site_members` + RLS
+- `supabase/02-storage.sql` — bucket `site-images` + políticas
+- `supabase/03-seed.sql` — dados iniciais (gerado por `node tools/export-content.mjs`)
+- `assets/js/data/supabase.config.js` — **você preenche** `url`, `anonKey` e liga `enabled`
+
+Enquanto `enabled` for `false` (padrão), o site público funciona exatamente como
+antes, com os dados locais de `assets/js/data/*.js`. Se o Supabase falhar, o
+carregador (`assets/js/data/remote.js`) mantém o conteúdo local — o site nunca
+fica em branco.
+
 ## JavaScript
 
 O header, o footer e as seções com conteúdo repetitivo (banners, serviços,

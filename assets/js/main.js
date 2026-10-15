@@ -9,38 +9,80 @@
 
   var c = MHR.components;
 
+  /* Um componente com problema (ex.: conteúdo incompleto vindo do painel) não
+     pode derrubar o restante da página: cada bloco é renderizado isolado. */
+  function safe(label, fn) {
+    try {
+      fn();
+    } catch (error) {
+      if (window.console && typeof console.warn === 'function') {
+        console.warn('[MHR] falha ao renderizar ' + label, error);
+      }
+    }
+  }
+
   function boot() {
-    c.header.render();
-    c.header.init();
+    safe('header', function () {
+      c.header.render();
+      c.header.init();
+    });
 
-    c.footer.render();
-    c.footer.init();
+    safe('footer', function () {
+      c.footer.render();
+      c.footer.init();
+    });
 
-    c.pillars.render();
+    safe('pillars', function () {
+      c.pillars.render();
+    });
 
-    c.carousel.render();
-    c.carousel.init();
+    safe('carousel', function () {
+      c.carousel.render();
+      c.carousel.init();
+    });
 
-    c.services.renderPreview();
-    c.services.renderDetail();
+    safe('services', function () {
+      c.services.renderPreview();
+      c.services.renderDetail();
+    });
 
-    c.segments.render();
-    c.segments.renderDetail();
+    safe('segments', function () {
+      c.segments.render();
+      c.segments.renderDetail();
+    });
 
-    c.engineering.renderFlow();
-    c.engineering.renderDeliverables();
-    c.engineering.renderResponsibility();
+    safe('engineering', function () {
+      c.engineering.renderFlow();
+      c.engineering.renderDeliverables();
+      c.engineering.renderResponsibility();
+    });
 
-    c.contact.render();
-    c.contact.renderFormOptions();
-    c.contact.initForm();
+    safe('contact', function () {
+      c.contact.render();
+      c.contact.renderFormOptions();
+      c.contact.initForm();
+    });
 
-    MHR.reveal.init();
+    safe('reveal', function () {
+      MHR.reveal.init();
+    });
+  }
+
+  function start() {
+    /* Se o carregamento remoto (Supabase) existir, espera ele terminar antes de
+       renderizar. Em qualquer falha — ou se estiver desabilitado — o loader
+       mantém os dados locais, então o site nunca fica em branco. */
+    var ready =
+      MHR.content && typeof MHR.content.load === 'function'
+        ? MHR.content.load()
+        : Promise.resolve(false);
+
+    ready.then(boot, boot);
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
+    document.addEventListener('DOMContentLoaded', start);
   } else {
-    boot();
+    start();
   }
 })((window.MHR = window.MHR || {}));

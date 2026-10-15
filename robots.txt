@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /admin/
 
 # Domínio: https://mhrengenharia.com
 Sitemap: https://mhrengenharia.com/sitemap.xml

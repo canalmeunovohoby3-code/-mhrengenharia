@@ -1,0 +1,162 @@
+/* ==========================================================================
+   MHR — Painel administrativo (/admin/)
+   Usa os mesmos tokens do site (cores, tipografia, espaçamento) para manter a
+   identidade visual. Isolado: nenhuma classe do site é alterada.
+   ========================================================================== */
+
+.admin {
+  min-height: 100vh;
+  background: var(--off-white, #f4f5f6);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+}
+
+/* --- Barra superior ------------------------------------------------------- */
+.adm-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem clamp(1rem, 4vw, 2rem);
+  background: var(--ink-950);
+  color: #fff;
+}
+.adm-top__logo { height: 34px; width: auto; background: none; }
+.adm-top__right { display: flex; align-items: center; gap: 0.75rem; }
+.adm-top__user {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* --- Botões --------------------------------------------------------------- */
+.adm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.adm-btn--primary { background: var(--mhr-orange); color: #fff; }
+.adm-btn--primary:hover { background: #d96f06; }
+.adm-btn--ghost {
+  background: transparent;
+  border-color: var(--line, #d8dade);
+  color: var(--ink-900);
+}
+.adm-btn--ghost:hover { border-color: var(--ink-900); }
+.adm-top .adm-btn--ghost { border-color: rgba(255, 255, 255, 0.3); color: #fff; }
+.adm-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+/* --- Login ---------------------------------------------------------------- */
+.adm-login { display: grid; place-items: center; padding: clamp(2rem, 8vh, 6rem) 1rem; }
+.adm-card {
+  width: 100%;
+  max-width: 380px;
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  background: #fff;
+  border: 1px solid var(--line, #e6e7e9);
+  border-top: 3px solid var(--mhr-orange);
+}
+.adm-card__title { font-family: var(--font-display); font-size: 1.375rem; }
+.adm-card__text { font-size: 0.875rem; color: var(--text-muted, #6b6f76); }
+
+/* --- Campos --------------------------------------------------------------- */
+.adm-field { display: grid; gap: 0.35rem; }
+.adm-field__label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted, #6b6f76);
+}
+.adm-field__input,
+.adm-field__textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--line, #d8dade);
+  border-radius: 2px;
+  background: #fff;
+  font: inherit;
+  font-size: 0.9375rem;
+  color: inherit;
+}
+.adm-field__textarea { min-height: 96px; resize: vertical; line-height: 1.5; }
+.adm-field__input:focus,
+.adm-field__textarea:focus { outline: 2px solid var(--mhr-orange); outline-offset: 1px; }
+.adm-field--check { display: flex; align-items: center; gap: 0.5rem; }
+.adm-field--check .adm-field__label { text-transform: none; letter-spacing: 0; font-family: var(--font-body); font-size: 0.875rem; }
+
+/* --- Abas / painel -------------------------------------------------------- */
+.adm-app { padding: clamp(1rem, 3vw, 2rem); max-width: 1100px; margin: 0 auto; }
+.adm-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+.adm-tab {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line, #d8dade);
+  border-radius: 2px;
+  background: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.adm-tab.is-active { background: var(--ink-900); border-color: var(--ink-900); color: #fff; }
+
+.adm-panel { background: #fff; border: 1px solid var(--line, #e6e7e9); padding: clamp(1rem, 3vw, 1.75rem); }
+.adm-panel__head { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; justify-content: space-between; margin-bottom: 1rem; }
+.adm-panel__title { font-family: var(--font-display); font-size: 1.25rem; }
+.adm-panel__hint { font-size: 0.8125rem; color: var(--text-muted, #6b6f76); margin-top: 0.25rem; }
+.adm-panel__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+/* --- Editor --------------------------------------------------------------- */
+.adm-editor { display: grid; gap: 1rem; }
+.adm-grid { display: grid; gap: 0.85rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.adm-full { grid-column: 1 / -1; }
+
+.adm-item { border: 1px solid var(--line, #e6e7e9); border-left: 3px solid var(--mhr-orange); }
+.adm-item__head {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 0.85rem; background: var(--off-white, #f7f8f9); cursor: pointer;
+}
+.adm-item__title { flex: 1; font-family: var(--font-display); font-size: 0.9375rem; font-weight: 600; }
+.adm-item__body { padding: 1rem; display: grid; gap: 0.85rem; }
+.adm-item[hidden] { display: none; }
+
+.adm-mini { padding: 0.35rem 0.6rem; font-size: 0.6875rem; }
+
+/* --- Imagem --------------------------------------------------------------- */
+.adm-image { display: grid; gap: 0.5rem; }
+.adm-image__row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.adm-thumb {
+  width: 96px; height: 72px; object-fit: cover;
+  border: 1px solid var(--line, #d8dade); background: var(--off-white-2, #eceef0);
+}
+.adm-thumb--logo { width: auto; height: 40px; }
+
+/* --- Status --------------------------------------------------------------- */
+.adm-status { margin-top: 0.75rem; font-size: 0.875rem; min-height: 1.2em; }
+.adm-status.is-ok { color: #1a7f37; }
+.adm-status.is-error { color: #b42318; }
+.adm-fatal {
+  margin: 1rem; padding: 1rem; border-left: 3px solid #b42318;
+  background: #fdecea; color: #7a1a12; font-size: 0.9375rem;
+}
+.adm-hr { height: 1px; background: var(--line, #e6e7e9); margin: 1.5rem 0; }
+.adm-help { font-size: 0.8125rem; color: var(--text-muted, #6b6f76); }
+
+@media (max-width: 640px) {
+  .adm-tabs { gap: 0.35rem; }
+  .adm-tab { padding: 0.4rem 0.6rem; font-size: 0.625rem; }
+}

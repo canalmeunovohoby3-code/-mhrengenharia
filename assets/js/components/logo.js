@@ -12,13 +12,22 @@
 (function (MHR) {
   'use strict';
 
-  var LOGO_LIGHT = 'assets/img/media/logo.svg';
-  var LOGO_DARK = 'assets/img/media/logo-dark.svg';
+  var DEFAULT_LIGHT = 'assets/img/media/logo.svg';
+  var DEFAULT_DARK = 'assets/img/media/logo-dark.svg';
+
+  /* Editável pelo painel: MHR.site.logo = { light, dark }
+     (fallback = os arquivos padrão acima) */
+  function logoPath(light) {
+    var cfg = (MHR.site && MHR.site.logo) || {};
+    var value = light ? cfg.light : cfg.dark;
+    if (typeof value === 'string' && value) return value;
+    return light ? DEFAULT_LIGHT : DEFAULT_DARK;
+  }
 
   function brand(options) {
     var opts = options || {};
     var site = MHR.site;
-    var src = opts.light ? LOGO_LIGHT : LOGO_DARK;
+    var src = logoPath(!!opts.light);
 
     return (
       '<a class="brand' +

@@ -7,7 +7,8 @@
   var dom = MHR.dom;
   var icon = MHR.icons.get;
 
-  var pillars = [
+  /* Valores padrão (usados quando não há dados vindos do painel) */
+  var DEFAULT_PILLARS = [
     {
       icon: 'layers',
       title: 'Engenharia Industrial',
@@ -30,9 +31,16 @@
     },
   ];
 
+  /* Editáveis pelo painel: MHR.site.pillars (fallback = DEFAULT_PILLARS) */
+  function list() {
+    var remote = MHR.site && MHR.site.pillars;
+    return Array.isArray(remote) && remote.length ? remote : DEFAULT_PILLARS;
+  }
+
   function render() {
     var mount = dom.qs('[data-pillars]');
     if (!mount) return;
+    var pillars = list();
     mount.innerHTML =
       '<div class="container container--wide">' +
       '<div class="pillars__grid">' +

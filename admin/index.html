@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel MHR — Administração</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin">
+  <header class="adm-top">
+    <img class="adm-top__logo" src="../assets/img/media/logo-dark.svg" alt="MHR">
+    <div class="adm-top__right">
+      <span class="adm-top__user" data-adm-user></span>
+      <button class="adm-btn adm-btn--ghost" type="button" data-adm-logout hidden>Sair</button>
+    </div>
+  </header>
+
+  <p class="adm-fatal" data-adm-fatal hidden></p>
+
+  <!-- Login -->
+  <main class="adm-login" data-adm-login hidden>
+    <form class="adm-card" data-adm-login-form>
+      <h1 class="adm-card__title">Painel administrativo</h1>
+      <p class="adm-card__text">Entre com o e-mail e a senha cadastrados no Supabase para editar o conteúdo do site.</p>
+      <label class="adm-field">
+        <span class="adm-field__label">E-mail</span>
+        <input class="adm-field__input" type="email" name="email" required autocomplete="username">
+      </label>
+      <label class="adm-field">
+        <span class="adm-field__label">Senha</span>
+        <input class="adm-field__input" type="password" name="password" required autocomplete="current-password">
+      </label>
+      <button class="adm-btn adm-btn--primary" type="submit">Entrar</button>
+      <p class="adm-status" data-adm-login-status></p>
+    </form>
+  </main>
+
+  <!-- Editor -->
+  <main class="adm-app" data-adm-app hidden>
+    <nav class="adm-tabs" data-adm-tabs aria-label="Coleções"></nav>
+    <section class="adm-panel">
+      <div class="adm-panel__head">
+        <div>
+          <h2 class="adm-panel__title" data-adm-title>—</h2>
+          <p class="adm-panel__hint" data-adm-hint></p>
+        </div>
+        <div class="adm-panel__actions">
+          <button class="adm-btn adm-btn--ghost" type="button" data-adm-reload>Descartar alterações</button>
+          <button class="adm-btn adm-btn--primary" type="button" data-adm-save>Salvar</button>
+        </div>
+      </div>
+      <p class="adm-status" data-adm-status></p>
+      <div class="adm-editor" data-adm-editor></div>
+    </section>
+  </main>
+
+  <script src="../assets/js/data/supabase.config.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

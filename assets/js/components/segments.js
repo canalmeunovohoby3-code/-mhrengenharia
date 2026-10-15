@@ -88,7 +88,7 @@
           dom.esc(segment.short) +
           '</p>' +
           '<ul class="service-detail__list">' +
-          segment.bullets
+          (segment.bullets || [])
             .map(function (bullet) {
               return '<li>' + dom.esc(bullet) + '</li>';
             })
