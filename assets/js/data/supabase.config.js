@@ -15,11 +15,14 @@
 
   MHR.supabase = {
     /* Project Settings → API → Project URL
-       ex.: 'https://xxxxxxxxxxxxxxxx.supabase.co' */
-    url: '',
+       (termina em .supabase.co — NÃO inclua /rest/v1/) */
+    url: 'https://jxfwpstrornifwsoynay.supabase.co',
 
-    /* Project Settings → API → anon public */
-    anonKey: '',
+    /* Chave PÚBLICA do projeto. Aceita os dois formatos:
+         - nova:      sb_publishable_...
+         - antiga:    anon (um JWT, começa com "eyJ")
+       A chave secreta (sb_secret_... / service_role) NUNCA entra aqui. */
+    anonKey: 'sb_publishable_FnIpYXa59Lkil7Yd3RD__w_cQ3hmr8O',
 
     /* Identificador deste site na tabela `content` (não alterar) */
     siteSlug: 'mhrengenharia',
@@ -28,10 +31,16 @@
     bucket: 'site-images',
 
     /* false = usa os dados locais (site atual, sem rede)
-       true  = carrega o conteúdo do Supabase (com fallback local em caso de erro) */
-    enabled: false,
+       true  = carrega o conteúdo do Supabase (com fallback local em caso de erro)
+
+       Está LIGADO: o conteúdo do Supabase foi conferido item a item e é
+       idêntico ao site atual, então ligar não muda nada visualmente — apenas
+       passa a refletir o que o cliente salvar no painel. Em qualquer falha
+       (offline, timeout, RLS, tabela ausente) o site volta sozinho para os
+       dados locais de assets/js/data/*.js (nunca fica em branco). */
+    enabled: true,
 
     /* Tempo máximo (ms) da busca antes de cair no fallback local */
-    timeout: 6000,
+    timeout: 3000,
   };
 })(window.MHR = window.MHR || {});

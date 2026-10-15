@@ -52,6 +52,8 @@
           <p class="adm-panel__hint" data-adm-hint></p>
         </div>
         <div class="adm-panel__actions">
+          <button class="adm-btn adm-btn--ghost" type="button" data-adm-history>Histórico</button>
+          <button class="adm-btn adm-btn--ghost" type="button" data-adm-undo>Desfazer</button>
           <button class="adm-btn adm-btn--ghost" type="button" data-adm-reload>Descartar alterações</button>
           <button class="adm-btn adm-btn--primary" type="button" data-adm-save>Salvar</button>
         </div>
@@ -61,7 +63,18 @@
     </section>
   </main>
 
+  <div class="adm-modal" data-adm-modal hidden>
+    <div class="adm-modal__box" role="dialog" aria-modal="true" aria-label="Histórico de alterações">
+      <div class="adm-modal__head">
+        <h2 class="adm-modal__title" data-adm-modal-title>Histórico</h2>
+        <button class="adm-btn adm-btn--ghost adm-mini" type="button" data-adm-modal-close>Fechar</button>
+      </div>
+      <div class="adm-modal__body" data-adm-modal-body></div>
+    </div>
+  </div>
+
   <script src="../assets/js/data/supabase.config.js"></script>
+  <script src="../assets/js/data/pages.js"></script>
   <script type="module" src="admin.js"></script>
 </body>
 </html>

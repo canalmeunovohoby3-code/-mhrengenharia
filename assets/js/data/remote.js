@@ -16,7 +16,31 @@
   var cfg = MHR.supabase || {};
 
   /* Coleções que o painel pode gerenciar na tabela `content` */
-  var COLLECTIONS = ['site', 'banners', 'services', 'segments', 'engineering', 'pillars', 'footer', 'logo'];
+  var COLLECTIONS = [
+    'site',
+    'banners',
+    'services',
+    'segments',
+    'engineering',
+    'pillars',
+    'footer',
+    'logo',
+    'pages',
+  ];
+
+  /* Mescla profunda: preserva chaves locais que o banco não trouxer
+     (usado para `site`, `engineering` e `pages`). */
+  function deepMerge(base, patch) {
+    if (patch == null) return base;
+    if (Array.isArray(base) || Array.isArray(patch)) return patch;
+    if (typeof base !== 'object' || typeof patch !== 'object') return patch;
+    var out = {};
+    Object.keys(base).forEach(function (k) { out[k] = base[k]; });
+    Object.keys(patch).forEach(function (k) {
+      out[k] = k in base ? deepMerge(base[k], patch[k]) : patch[k];
+    });
+    return out;
+  }
 
   function isEnabled() {
     return (
@@ -67,6 +91,11 @@
       MHR.site[key] = payload;
       return;
     }
+    if (key === 'pages') {
+      /* Mescla por página/grupo: o que o painel não enviar continua local */
+      MHR.pageContent = deepMerge(MHR.pageContent || {}, payload || {});
+      return;
+    }
     if (key === 'site' || key === 'engineering') {
       /* Mescla: preserva chaves locais que não existirem no banco */
       MHR[key] = Object.assign({}, MHR[key] || {}, payload || {});
@@ -86,13 +115,18 @@
       encodeURIComponent(cfg.siteSlug) +
       '&select=key,payload';
 
-    var options = {
-      headers: {
-        apikey: cfg.anonKey,
-        Authorization: 'Bearer ' + cfg.anonKey,
-        Accept: 'application/json',
-      },
+    /* A chave pública pode ser a nova (`sb_publishable_...`) ou a antiga
+       `anon` (JWT). As chaves novas NÃO são JWT: vão apenas no cabeçalho
+       `apikey`. O `Authorization` só é enviado quando a chave é um JWT. */
+    var headers = {
+      apikey: cfg.anonKey,
+      Accept: 'application/json',
     };
+    if (/^eyJ/.test(cfg.anonKey)) {
+      headers.Authorization = 'Bearer ' + cfg.anonKey;
+    }
+
+    var options = { headers: headers };
 
     return fetchWithTimeout(url, options, cfg.timeout)
       .then(function (res) {

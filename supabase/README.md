@@ -23,6 +23,13 @@ Na **ordem**:
 | 1º | `supabase/01-schema.sql` | Tabelas `content` e `site_members`, RLS e funções |
 | 2º | `supabase/02-storage.sql` | Bucket `site-images` + políticas do Storage |
 | 3º | `supabase/03-seed.sql` | **Dados iniciais** (idênticos ao site atual) |
+| 4º | `supabase/04-history.sql` | **Histórico + "Desfazer"** (auditoria das alterações) |
+| 5º | `supabase/05-views.sql` | **Contador de visitas** (visualizações de página reais) |
+
+> O `04-history.sql` e o `05-views.sql` são opcionais para o site carregar, mas
+> são **necessários** para o botão "Desfazer"/"Histórico" e para a aba
+> "Estatísticas" funcionarem. Sem eles o painel mostra uma mensagem clara e o
+> site continua funcionando normalmente.
 
 O `03-seed.sql` é gerado por `node tools/export-content.mjs` — rode de novo
 sempre que quiser reexportar os dados locais como ponto de partida.
@@ -81,6 +88,11 @@ usando os dados locais — zero risco.
   permitidos.
 - O conteúdo é salvo como **texto/JSON puro** — o site já escapa tudo na
   exibição, então não há injeção de HTML.
+- **Chave secreta:** se uma `sb_secret_...` / `service_role` foi exposta em
+  algum lugar, **rotacione-a no Supabase** (Project Settings → API → rotacionar
+  a chave secreta). Ela **nunca** deve ir para o site, o repositório, logs ou
+  histórico de commits. O site usa **apenas** a chave pública
+  (`sb_publishable_...` ou `anon`).
 
 ## Estrutura das coleções (tabela `content`)
 
@@ -94,6 +106,32 @@ usando os dados locais — zero risco.
 | `pillars` | Faixa de diferenciais (4 itens) |
 | `footer` | Texto institucional + colunas de links do rodapé |
 | `logo` | Arquivos da logo (clara e escura) |
+| `pages` | Textos das páginas (títulos, textos de apoio e listas por página) |
+
+## "Desfazer" e histórico (`04-history.sql`)
+
+- A cada gravação, o estado **anterior** é guardado em `content_history`
+  (com data e usuário). Nada é apagado.
+- No painel, **Desfazer** restaura o estado anterior salvo. Ele recusa a
+  operação se outra pessoa alterou a mesma coleção depois do seu último
+  salvamento (evita apagar alteração de terceiros).
+- **Histórico** lista as versões anteriores e permite restaurar uma delas.
+- Durante a sessão do painel, o "Desfazer" também funciona a partir de um
+  snapshot local, mesmo antes de rodar o `04-history.sql`.
+
+## Contador de visitas (`05-views.sql`)
+
+- Métrica: **visualizações de página (page views)** — não são visitantes
+  únicos.
+- Cada carregamento de uma página pública conta **1**. Recarregar a mesma
+  página na mesma sessão **não** conta de novo (deduplicação de 30 min no
+  servidor + controle no navegador).
+- O painel (`/admin/`) **não** é contado.
+- **A contagem começa a partir da aplicação do `05-views.sql`** — não há
+  dados retroativos nem números fictícios.
+- A escrita acontece só pela função `track_view` (SECURITY DEFINER, com
+  validação e limites). Não existe permissão de `INSERT` genérica.
+- A leitura agregada (`views_summary`) exige o usuário ser membro do site.
 
 ## Arquivos no repositório
 

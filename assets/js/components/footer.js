@@ -214,6 +214,7 @@
       '. Todos os direitos reservados. Imagens do site são ilustrativas e serão substituídas por registros reais das operações.</p>' +
       '</div>' +
       '<div class="footer__bottom-right">' +
+      '<a class="footer__admin" href="admin/" rel="nofollow">Área do cliente</a>' +
       '<a class="to-top" href="#topo" data-to-top>' +
       icon('arrow-up') +
       'Voltar ao topo</a>' +

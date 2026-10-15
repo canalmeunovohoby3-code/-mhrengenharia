@@ -63,6 +63,10 @@
       c.contact.initForm();
     });
 
+    safe('pages', function () {
+      if (c.pages) c.pages.render();
+    });
+
     safe('reveal', function () {
       MHR.reveal.init();
     });

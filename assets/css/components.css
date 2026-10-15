@@ -2478,3 +2478,19 @@
 .to-top:hover svg {
   transform: translateY(-3px);
 }
+
+/* Link discreto para o painel administrativo (rodapé) */
+.footer__admin {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(244, 245, 246, 0.42);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color var(--dur) var(--ease);
+}
+
+.footer__admin:hover {
+  color: var(--mhr-orange);
+}

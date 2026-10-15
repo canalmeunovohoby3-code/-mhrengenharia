@@ -36,6 +36,7 @@ const mhr = {
   ...loadData(dataDir + 'services.js'),
   ...loadData(dataDir + 'segments.js'),
   ...loadData(dataDir + 'engineering.js'),
+  ...loadData(dataDir + 'pages.js'),
 };
 
 /* Snapshot do conteúdo que hoje está nos componentes (fase 3 vai movê-lo para cá) */
@@ -90,6 +91,7 @@ const collections = {
   pillars: pillars,
   footer: footer,
   logo: logo,
+  pages: mhr.pageContent,
 };
 
 function dollarQuote(json) {

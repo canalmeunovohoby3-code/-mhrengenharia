@@ -156,6 +156,91 @@
 .adm-hr { height: 1px; background: var(--line, #e6e7e9); margin: 1.5rem 0; }
 .adm-help { font-size: 0.8125rem; color: var(--text-muted, #6b6f76); }
 
+/* --- Páginas (textos): subtabs e grupos ---------------------------------- */
+.adm-tabs--sub {
+  margin: 0 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line, #e6e7e9);
+}
+.adm-group {
+  border: 1px solid var(--line, #e6e7e9);
+  border-left: 3px solid var(--ink-900);
+  padding: 0.85rem 1rem 1rem;
+  margin: 0 0 0.85rem;
+}
+.adm-group__title {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-900);
+  padding: 0 0.35rem;
+}
+
+/* --- Estatísticas --------------------------------------------------------- */
+.adm-stats { display: grid; gap: 1rem; margin-top: 1rem; }
+.adm-stats__cards {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.adm-stat {
+  border: 1px solid var(--line, #e6e7e9);
+  border-top: 3px solid var(--mhr-orange);
+  padding: 0.85rem 1rem;
+  display: grid;
+  gap: 0.25rem;
+}
+.adm-stat__value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+.adm-stat__label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted, #6b6f76);
+}
+.adm-subtitle { font-family: var(--font-display); font-size: 1rem; margin-top: 0.5rem; }
+
+/* --- Histórico (modal) ---------------------------------------------------- */
+.adm-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 18, 22, 0.55);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 60;
+}
+.adm-modal[hidden] { display: none; }
+.adm-modal__box {
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  overflow: auto;
+  background: #fff;
+  border-top: 3px solid var(--mhr-orange);
+  padding: 1rem 1.25rem 1.25rem;
+}
+.adm-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.adm-modal__title { font-family: var(--font-display); font-size: 1.125rem; }
+.adm-history { display: grid; gap: 0.5rem; margin-top: 0.5rem; }
+.adm-history__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line, #e6e7e9);
+}
+.adm-history__meta { display: flex; flex-direction: column; gap: 0.15rem; }
+
 @media (max-width: 640px) {
   .adm-tabs { gap: 0.35rem; }
   .adm-tab { padding: 0.4rem 0.6rem; font-size: 0.625rem; }
